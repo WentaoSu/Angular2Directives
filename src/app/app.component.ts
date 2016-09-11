@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  switch = false;
+  items = [1, 2, 3, 4, 5];
+  value = 100;
+  OnSwitch() {
+    this.switch = !this.switch;
+  }
 }
